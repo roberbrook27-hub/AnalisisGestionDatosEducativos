@@ -1,0 +1,1339 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Análisis y gestión de datos educativos - Tema2 - Los datos en educación - Data set</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+</head>
+<body>
+	<div class="container">
+		<div class="row mt-4">
+			<div class="col">
+				<h1 class="mb-3 text-center">DataSet - Descripción de variables</h1>
+				
+				<div class="accordion accordion-flush" id="temario">
+					<!-- elemento 1 -->
+					<div class="accordion-item">
+						<h2 class="accordion-header text-center" id="encabezado-1">
+							<button class="accordion-button" type="button"
+							 data-bs-toggle="collapse"
+							 data-bs-target="#elemento1"
+							 aria-expanded="true"
+							 aria-controles="elemento1"
+
+							>
+								Nombre y apellidos 
+							</button>
+						</h2>
+
+						<div id="elemento1" class="accordion-collapse collapse show" 
+						aria-labelledby="encabezado-1"
+						data-bs-parent="#temario"
+
+						>
+							<div class="accordion-body">
+								<table class="table table-striped table-hover table-sm  table-bordered">
+									<thead>
+										<tr class="table-dark">
+											<th class="text-center">Descripción del dato</th>
+											<th class="text-center">Tipo de dato</th>
+											<th class="text-center">Privacidad</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td class="text-center">
+												Dato de entrada <br>
+												No es relevante <br>
+												Es asequible
+											</td>
+											<td class="text-center">
+												Se trata de un texto, no es númerico ni categórico
+											</td>
+											<td class="text-center">
+												Compromete completamente la privacidad
+											</td>
+										</tr>
+										<tr class="table-dark">
+											<th colspan="3" class="text-center">Utilidad para el analisis</th>
+										</tr>
+										<tr>
+											<td colspan="3" class="text-center">
+												<i class="bi bi-x-circle text-danger me-2"></i>
+												No aporta valor analítico. <br>
+												Sirve para identificar estudiantes, pero no contribuye a explicar rendimiento, participación o contexto.
+											</td>
+										</tr>
+										<tr class="table-dark">
+											<th colspan="3" class="text-center">Soluciones para la privacidad</th>
+										</tr>
+										<tr>
+											<td colspan="3" class="text-center">
+												<ul class="list-unstyled d-inline-block text-start">
+												  <li class="d-flex align-items-center mb-1">
+												  	<i class="bi bi-check-circle text-success me-2 fs-5"></i> 
+												  	Eliminar completamente del dataset analítico
+												  </li>
+												  <li class="d-flex align-items-center mb-1">
+												  	<i class="bi bi-check-circle text-success me-2 fs-5"></i> 
+												  	Sustituir por un ID aleatorio (Ej.: STU001).
+												  </li>
+
+												</ul>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+
+
+					<!-- elemento 2 -->
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="encabezado-2">
+							<button class="accordion-button" type="button"
+							 data-bs-toggle="collapse"
+							 data-bs-target="#elemento2"
+							 aria-expanded="true"
+							 aria-controles="elemento2"
+
+							>
+								Nacionalidad
+							</button>
+						</h2>
+						<div id="elemento2" class="accordion-collapse collapse" 
+						aria-labelledby="encabezado-2"
+						data-bs-parent="#temario"
+
+						>
+							<div class="accordion-body">
+								<table class="table table-striped table-hover table-sm  table-bordered">
+									<thead>
+										<tr class="table-dark">
+											<th class="text-center">Descripción del dato</th>
+											<th class="text-center">Tipo de dato</th>
+											<th class="text-center">Privacidad</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td class="text-center">
+												Dato de entrada <br>
+												Podría ser relevante <br>
+												Es asequible
+											</td>
+											<td class="text-center">
+												Tipo categórico nominal <br>
+												Texto
+											</td>
+											<td class="text-center">
+												Podría comprometer la privacidad
+											</td>
+										</tr>
+										<tr class="table-dark">
+											<th colspan="3" class="text-center">Utilidad para el analisis</th>
+										</tr>
+										<tr>
+											<td colspan="3" class="text-center">
+												<ul class="list-unstyled d-inline-block text-start">
+												  <li class="d-flex align-items-center mb-1">
+												  	<i class=""></i> 
+												  	Útil para estudiar:
+												  </li>
+												  <li class="d-flex align-items-center mb-1">
+												  	<i class="bi bi-check-circle text-success me-2 fs-5"></i> 
+												  	Necesidades lingüísticas
+												  </li>
+												  <li class="d-flex align-items-center mb-1">
+												  	<i class="bi bi-check-circle text-success me-2 fs-5"></i> 
+												  	Diversidad cultural
+												  </li>
+												  <li class="d-flex align-items-center mb-1">
+												  	<i class="bi bi-check-circle text-success me-2 fs-5"></i> 
+												  	Posibles brechas educativas asociadas a contexto sociocultural
+												  </li>
+												  <li class="d-flex align-items-center mb-1">
+												  	<i class="bi bi-check-circle text-success me-2 fs-5"></i> 
+												  	Equidad
+												  </li>
+
+												</ul>
+											</td>
+										</tr>
+										<tr class="table-dark">
+											<th colspan="3" class="text-center">Soluciones para la privacidad</th>
+										</tr>
+										<tr>
+											<td colspan="3" class="text-center">
+												<ul class="list-unstyled d-inline-block text-start">
+												  <li class="d-flex align-items-center mb-1">
+												  	<i class="bi bi-check-circle text-success me-2 fs-5"></i> 
+												  	Generalizar categorías (Ej.: Española / Europea / Extracomunitaria)
+												  </li>
+												  <li class="d-flex align-items-center mb-1">
+												  	<i class="bi bi-check-circle text-success me-2 fs-5"></i> 
+												  	Evitar categorías que identifiquen a un único alumno.
+												  </li>
+												   <li class="d-flex align-items-center mb-1">
+												  	<i class="bi bi-check-circle text-success me-2 fs-5"></i> 
+												  	Aplicar anonimización combinada si se cruza con otras variables sensibles.
+												  </li>
+
+												</ul>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+
+
+					<!-- elemento 3 -->
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="encabezado-3">
+							<button class="accordion-button" type="button"
+							 data-bs-toggle="collapse"
+							 data-bs-target="#elemento3"
+							 aria-expanded="true"
+							 aria-controles="elemento3"
+
+							>
+								Sexo
+							</button>
+						</h2>
+						<div id="elemento3" class="accordion-collapse collapse" 
+						aria-labelledby="encabezado-3"
+						data-bs-parent="#temario"
+
+						>
+							<div class="accordion-body">
+									<table class="table table-striped table-hover table-sm  table-bordered">
+										<thead>
+											<tr class="table-dark">
+												<th class="text-center">Descripción del dato</th>
+												<th class="text-center">Tipo de dato</th>
+												<th class="text-center">Privacidad</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td class="text-center">
+													Dato de entrada <br>
+													Podría ser relevante <br>
+													Es asequible
+												</td>
+												<td class="text-center">
+													Tipo categórico nominal <br>
+													Texto
+												</td>
+												<td class="text-center">
+													Podría comprometer la privacidad
+												</td>
+											</tr>
+											<tr class="table-dark">
+												<th colspan="3" class="text-center">Utilidad para el analisis</th>
+											</tr>
+											<tr>
+												<td colspan="3" class="text-center">
+													<ul class="list-unstyled d-inline-block text-start">
+													  <li class="d-flex align-items-center mb-1">
+													  	<i class=""></i> 
+													  	Permite identificar:
+													  </li>
+													  <li class="d-flex align-items-center mb-1">
+													  	<i class="bi bi-check-circle text-success me-2 fs-5"></i> 
+													  	Brechas de género en rendimiento o participación
+													  </li>
+													  <li class="d-flex align-items-center mb-1">
+													  	<i class="bi bi-check-circle text-success me-2 fs-5"></i> 
+													  	Diferencias en uso de recursos o interacción digital
+													  </li>
+
+													</ul>
+												</td>
+											</tr>
+											<tr class="table-dark">
+												<th colspan="3" class="text-center">Soluciones para la privacidad</th>
+											</tr>
+											<tr>
+												<td colspan="3" class="text-center">
+													<ul class="list-unstyled d-inline-block text-start">
+													  <li class="d-flex align-items-center mb-1">
+													  	<i class="bi bi-check-circle text-success me-2 fs-5"></i> 
+													  	Mantener categorías simples y no detalladas (M, F, Otro).
+													  </li>
+													  <li class="d-flex align-items-center mb-1">
+													  	<i class="bi bi-check-circle text-success me-2 fs-5"></i> 
+													  	Evitar segmentaciones demasiado específicas que puedan reidentificar.
+													  </li>
+													   <li class="d-flex align-items-center mb-1">
+													  	<i class="bi bi-check-circle text-success me-2 fs-5"></i> 
+													  	Aplicar principios de minimización: usar solo si aporta valor real al análisis.
+													  </li>
+
+													</ul>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+							</div>
+						</div>
+					</div>
+
+
+					<!-- elemento 4 -->
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="encabezado-4">
+							<button class="accordion-button" type="button"
+							 data-bs-toggle="collapse"
+							 data-bs-target="#elemento4"
+							 aria-expanded="true"
+							 aria-controles="elemento4"
+
+							>
+								Número Seguridad social
+							</button>
+						</h2>
+						<div id="elemento4" class="accordion-collapse collapse" 
+						aria-labelledby="encabezado-4"
+						data-bs-parent="#temario"
+
+						>
+							<div class="accordion-body">
+								<table class="table table-striped table-hover table-sm  table-bordered">
+									<thead>
+										<tr class="table-dark">
+											<th class="text-center">Descripción del dato</th>
+											<th class="text-center">Tipo de dato</th>
+											<th class="text-center">Privacidad</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td class="text-center">
+												Datos de entrada <br>
+												Es relevante <br>
+												No es asequible
+											</td>
+											<td class="text-center">
+												Se trata de un texto, no es númerico ni categórico
+											</td>
+											<td class="text-center">
+												Compromete completamente la privacidad
+											</td>
+										</tr>
+										<tr class="table-dark">
+												<th colspan="3" class="text-center">Utilidad para el analisis</th>
+											</tr>
+											<tr>
+												<td colspan="3" class="text-center">
+													<i class="bi bi-x-circle text-danger me-2"></i>
+													No tiene utilidad analítica. <br>
+													Es un identificador administrativo, no aporta información sobre aprendizaje o contexto.
+												</td>
+											</tr>
+											<tr class="table-dark">
+												<th colspan="3" class="text-center">Soluciones para la privacidad</th>
+											</tr>
+											<tr>
+												<td colspan="3" class="text-center">
+													<ul class="list-unstyled d-inline-block text-start">
+													  <li class="d-flex align-items-center mb-1">
+													  	<i class="bi bi-check-circle text-success me-2 fs-5"></i> 
+													  	Nunca incluir en análisis, solo en documentos administrativos fuera del proyecto.
+													  </li>
+													  <li class="d-flex align-items-center mb-1">
+													  	<i class="bi bi-check-circle text-success me-2 fs-5"></i> 
+													  	Si se requiere trazabilidad (raro), sustituir por un ID anónimo.
+													  </li>
+													 
+
+													</ul>
+												</td>
+											</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+
+
+
+					<!-- elemento 5 -->
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="encabezado-5">
+							<button class="accordion-button" type="button"
+							 data-bs-toggle="collapse"
+							 data-bs-target="#elemento5"
+							 aria-expanded="true"
+							 aria-controles="elemento5"
+
+							>
+								Titulación anterior
+							</button>
+						</h2>
+						<div id="elemento5" class="accordion-collapse collapse" 
+						aria-labelledby="encabezado-5"
+						data-bs-parent="#temario"
+
+						>
+							<div class="accordion-body">
+								<table class="table table-striped table-hover table-sm  table-bordered">
+									<thead>
+										<tr class="table-dark">
+											<th class="text-center">Descripción del dato</th>
+											<th class="text-center">Tipo de dato</th>
+											<th class="text-center">Privacidad</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td class="text-center">
+												Datos de resultado <br>
+												Es relevante <br>
+												No es asequible.
+											</td>
+											<td class="text-center">
+												Se trata de un texto, no es númerico ni categórico
+											</td>
+											<td class="text-center">
+												No compromete la privacidad
+											</td>
+										</tr>
+										<tr class="table-dark">
+												<th colspan="3" class="text-center">Utilidad para el analisis</th>
+											</tr>
+											<tr>
+												<td colspan="3" class="text-center">
+													<ul class="list-unstyled d-inline-block text-start">
+													  <li class="d-flex align-items-center mb-1">
+													  	<i class=""></i> 
+													  	Muy útil para:
+													  </li>
+													  <li class="d-flex align-items-center mb-1">
+													  	<i class="bi bi-check-circle text-success me-2 fs-5"></i> 
+													  	Relacionar trayectoria formativa previa con rendimiento en FP.
+													  </li>
+													  <li class="d-flex align-items-center mb-1">
+													  	<i class="bi bi-check-circle text-success me-2 fs-5"></i> 
+													  	Detectar brechas en preparación inicial.
+													  </li>
+													  <li class="d-flex align-items-center mb-1">
+													  	<i class="bi bi-check-circle text-success me-2 fs-5"></i> 
+													  	Determinar perfiles de ingreso.
+													  </li>
+
+													</ul>
+												</td>
+											</tr>
+											<tr class="table-dark">
+												<th colspan="3" class="text-center">Soluciones para la privacidad</th>
+											</tr>
+											<tr>
+												<td colspan="3" class="text-center">
+													<ul class="list-unstyled d-inline-block text-start">
+													  <li class="d-flex align-items-center mb-1">
+													  	<i class=""></i> 
+													  	Se puede mantener sin cambios, pero:
+													  </li>
+													  <li class="d-flex align-items-center mb-1">
+													  	<i class="bi bi-check-circle text-success me-2 fs-5"></i> 
+													  	Normalizar categorías (ESO / Bachillerato / FP Grado Medio / Otros).
+													  </li>
+													   <li class="d-flex align-items-center mb-1">
+													  	<i class="bi bi-check-circle text-success me-2 fs-5"></i> 
+													  	Evitar títulos extremadamente específicos que puedan identificar.
+													  </li>
+
+													</ul>
+												</td>
+											</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+
+
+
+					<!-- elemento 6 -->
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="encabezado-6">
+							<button class="accordion-button" type="button"
+							 data-bs-toggle="collapse"
+							 data-bs-target="#elemento6"
+							 aria-expanded="true"
+							 aria-controles="elemento6"
+
+							>
+								Situación laboral
+							</button>
+						</h2>
+						<div id="elemento6" class="accordion-collapse collapse" 
+						aria-labelledby="encabezado-6"
+						data-bs-parent="#temario"
+
+						>
+							<div class="accordion-body">
+								<table class="table table-striped table-hover table-sm  table-bordered">
+									<thead>
+										<tr class="table-dark">
+											<th class="text-center">Descripción del dato</th>
+											<th class="text-center">Tipo de dato</th>
+											<th class="text-center">Privacidad</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td class="text-center">
+												Dato de entrada <br>
+												Podría ser relevante <br>
+												Es asequible
+											</td>
+											<td class="text-center">
+												Tipo categórico nominal <br> 
+												Texto
+											</td>
+											<td class="text-center">
+												Podría comprometer la privacidad
+											</td>
+										</tr>
+										<tr class="table-dark">
+												<th colspan="3" class="text-center">Utilidad para el analisis</th>
+											</tr>
+											<tr>
+												<td colspan="3" class="text-center">
+													<ul class="list-unstyled d-inline-block text-start">
+													  <li class="d-flex align-items-center mb-1">
+													  	<i class=""></i> 
+													  	Útil para:
+													  </li>
+													  <li class="d-flex align-items-center mb-1">
+													  	<i class="bi bi-check-circle text-success me-2 fs-5"></i> 
+													  	Analizar cómo influye el empleo en el rendimiento académico.
+													  </li>
+													  <li class="d-flex align-items-center mb-1">
+													  	<i class="bi bi-check-circle text-success me-2 fs-5"></i> 
+													  	Detectar si estudiantes laboralmente activos tienen menor participación.
+													  </li>
+													  <li class="d-flex align-items-center mb-1">
+													  	<i class="bi bi-check-circle text-success me-2 fs-5"></i> 
+													  	Planificar medidas de conciliación.
+													  </li>
+
+													</ul>
+												</td>
+											</tr>
+											<tr class="table-dark">
+												<th colspan="3" class="text-center">Soluciones para la privacidad</th>
+											</tr>
+											<tr>
+												<td colspan="3" class="text-center">
+													<ul class="list-unstyled d-inline-block text-start">
+													  
+													  <li class="d-flex align-items-center mb-1">
+													  	<i class="bi bi-check-circle text-success me-2 fs-5"></i> 
+													  	Generalizar categorías: Empleado / Desempleado / En formación.
+													  </li>
+													   <li class="d-flex align-items-center mb-1">
+													  	<i class="bi bi-check-circle text-success me-2 fs-5"></i> 
+													  	Evitar incluir empresa o puesto concreto.
+													  </li>
+													  <li class="d-flex align-items-center mb-1">
+													  	<i class="bi bi-check-circle text-success me-2 fs-5"></i> 
+													  	No registrar ingresos ni detalles personales asociados.
+													  </li>
+
+													</ul>
+												</td>
+											</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+
+
+					<!-- elemento 7 -->
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="encabezado-7">
+							<button class="accordion-button" type="button"
+							 data-bs-toggle="collapse"
+							 data-bs-target="#elemento7"
+							 aria-expanded="true"
+							 aria-controles="elemento7"
+
+							>
+								Actividades realizadas
+							</button>
+						</h2>
+						<div id="elemento7" class="accordion-collapse collapse" 
+						aria-labelledby="encabezado-7"
+						data-bs-parent="#temario"
+
+						>
+							<div class="accordion-body">
+								<table class="table table-striped table-hover table-sm  table-bordered">
+									<thead>
+										<tr class="table-dark">
+											<th class="text-center">Descripción del dato</th>
+											<th class="text-center">Tipo de dato</th>
+											<th class="text-center">Privacidad</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td class="text-center">
+												Dato de proceso <br> 
+												Podrían ser relevante <br>
+												Es asequible
+											</td>
+											<td class="text-center">
+												Se trata de un texto, que necesitaria un preprocesado costoso para obtener datos compuetables
+											</td>
+											<td class="text-center">
+												No compromete la privacidad
+											</td>
+										</tr>
+										<tr class="table-dark">
+												<th colspan="3" class="text-center">Utilidad para el analisis</th>
+											</tr>
+											<tr>
+												<td colspan="3" class="text-center">
+													<ul class="list-unstyled d-inline-block text-start">
+													  <li class="d-flex align-items-center mb-1">
+													  	<i class=""></i> 
+													  	Útil para:
+													  </li>
+													  <li class="d-flex align-items-center mb-1">
+													  	<i class="bi bi-check-circle text-success me-2 fs-5"></i> 
+													  	Analizar cómo influye el empleo en el rendimiento académico.
+													  </li>
+													  <li class="d-flex align-items-center mb-1">
+													  	<i class="bi bi-check-circle text-success me-2 fs-5"></i> 
+													  	Detectar si estudiantes laboralmente activos tienen menor participación.
+													  </li>
+													  <li class="d-flex align-items-center mb-1">
+													  	<i class="bi bi-check-circle text-success me-2 fs-5"></i> 
+													  	Planificar medidas de conciliación.
+													  </li>
+
+													</ul>
+												</td>
+											</tr>
+											<tr class="table-dark">
+												<th colspan="3" class="text-center">Soluciones para la privacidad</th>
+											</tr>
+											<tr>
+												<td colspan="3" class="text-center">
+													<ul class="list-unstyled d-inline-block text-start">
+													  <li class="d-flex align-items-center mb-1">
+													  	<i class="bi bi-check-circle text-success me-2 fs-5"></i> 
+													  	Mantener datos agregados, por ejemplo:
+													  	Número total de actividades realizadas y 
+													  	Porcentaje completado
+													  </li>
+													   <li class="d-flex align-items-center mb-1">
+													  	<i class="bi bi-check-circle text-success me-2 fs-5"></i> 
+													  	Evitar incluir empresa o puesto concreto.
+													  </li>
+													  <li class="d-flex align-items-center mb-1">
+													  	<i class="bi bi-check-circle text-success me-2 fs-5"></i> 
+													  	Evitar almacenar texto libre que pueda contener datos personales.
+													  </li>
+
+													</ul>
+												</td>
+											</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+
+
+					<!-- elemento 8 -->
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="encabezado-8">
+							<button class="accordion-button" type="button"
+							 data-bs-toggle="collapse"
+							 data-bs-target="#elemento8"
+							 aria-expanded="true"
+							 aria-controles="elemento8"
+
+							>
+								Módulos profesionales pendientes curso anterior
+							</button>
+						</h2>
+						<div id="elemento8" class="accordion-collapse collapse" 
+						aria-labelledby="encabezado-8"
+						data-bs-parent="#temario"
+
+						>
+							<div class="accordion-body">
+								<table class="table table-striped table-hover table-sm  table-bordered">
+									<thead>
+										<tr class="table-dark">
+											<th class="text-center">Descripción del dato</th>
+											<th class="text-center">Tipo de dato</th>
+											<th class="text-center">Privacidad</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td class="text-center">
+												Dato de proceso <br>
+												Es relevante <br>s
+												Es asequible
+											</td>
+											<td class="text-center">
+												Tipo categórico nominal <br>
+												Texto
+											</td>
+											<td class="text-center">
+												Podría comprometer la privacidad
+											</td>
+										</tr>
+											<tr class="table-dark">
+												<th colspan="3" class="text-center">Utilidad para el analisis</th>
+											</tr>
+											<tr>
+												<td colspan="3" class="text-center">
+													<ul class="list-unstyled d-inline-block text-start">
+													  <li class="d-flex align-items-center mb-1">
+													  	<i class=""></i> 
+													  	Importante para:
+													  </li>
+													  <li class="d-flex align-items-center mb-1">
+													  	<i class="bi bi-check-circle text-success me-2 fs-5"></i> 
+													  	Identificar riesgo académico
+													  </li>
+													  <li class="d-flex align-items-center mb-1">
+													  	<i class="bi bi-check-circle text-success me-2 fs-5"></i> 
+													  	Prever necesidad de apoyo adicional
+													  </li>
+													  <li class="d-flex align-items-center mb-1">
+													  	<i class="bi bi-check-circle text-success me-2 fs-5"></i> 
+													  	Analizar patrones de repetición o recuperación
+													  </li>
+
+													</ul>
+												</td>
+											</tr>
+											<tr class="table-dark">
+												<th colspan="3" class="text-center">Soluciones para la privacidad</th>
+											</tr>
+											<tr>
+												<td colspan="3" class="text-center">
+													<ul class="list-unstyled d-inline-block text-start">
+													  <li class="d-flex align-items-center mb-1">
+													  	<i class="bi bi-check-circle text-success me-2 fs-5"></i> 
+													  	No listar nombres de módulos si identifican situaciones únicas.
+													  </li>
+													   <li class="d-flex align-items-center mb-1">
+													  	<i class="bi bi-check-circle text-success me-2 fs-5"></i> 
+													  	Usar cantidad de módulos pendientes
+													  </li>
+													  <li class="d-flex align-items-center mb-1">
+													  	<i class="bi bi-check-circle text-success me-2 fs-5"></i> 
+													  	Usar Tipo general (técnicos / transversales).
+													  </li>
+
+													</ul>
+												</td>
+											</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+
+
+					<!-- elemento 9 -->
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="encabezado-9">
+							<button class="accordion-button" type="button"
+							 data-bs-toggle="collapse"
+							 data-bs-target="#elemento9"
+							 aria-expanded="true"
+							 aria-controles="elemento9"
+
+							>
+								Módulo profesionales abandonados
+							</button>
+						</h2>
+						<div id="elemento9" class="accordion-collapse collapse" 
+						aria-labelledby="encabezado-9"
+						data-bs-parent="#temario"
+
+						>
+							<div class="accordion-body">
+								<table class="table table-striped table-hover table-sm  table-bordered">
+									<thead>
+										<tr class="table-dark">
+											<th class="text-center">Descripción del dato</th>
+											<th class="text-center">Tipo de dato</th>
+											<th class="text-center">Privacidad</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td class="text-center">
+												Dato de proceso <br>
+												Es relevante <br>
+												Es asequible
+											</td>
+											<td class="text-center">
+												Tipo categórico nominal
+												Texto
+											</td>
+											<td class="text-center">
+												Podría comprometer la privacidad
+											</td>
+										</tr>
+											<tr class="table-dark">
+												<th colspan="3" class="text-center">Utilidad para el analisis</th>
+											</tr>
+											<tr>
+												<td colspan="3" class="text-center">
+													<ul class="list-unstyled d-inline-block text-start">
+													  <li class="d-flex align-items-center mb-1">
+													  	<i class=""></i> 
+													  	Útil para:
+													  </li>
+													  <li class="d-flex align-items-center mb-1">
+													  	<i class="bi bi-check-circle text-success me-2 fs-5"></i> 
+													  	Medir abandono parcial
+													  </li>
+													  <li class="d-flex align-items-center mb-1">
+													  	<i class="bi bi-check-circle text-success me-2 fs-5"></i> 
+													  	Predicción de abandono total del ciclo
+													  </li>
+													  <li class="d-flex align-items-center mb-1">
+													  	<i class="bi bi-check-circle text-success me-2 fs-5"></i> 
+													  	Detección de asignaturas con alta tasa de deserción
+													  </li>
+													</ul>
+												</td>
+											</tr>
+											<tr class="table-dark">
+												<th colspan="3" class="text-center">Soluciones para la privacidad</th>
+											</tr>
+											<tr>
+												<td colspan="3" class="text-center">
+													<ul class="list-unstyled d-inline-block text-start">
+													  <li class="d-flex align-items-center mb-1">
+													  	<i class="bi bi-check-circle text-success me-2 fs-5"></i> 
+													  	Agregar por cantidad en lugar de detallar exactamente cuáles.
+													  </li>
+													   <li class="d-flex align-items-center mb-1">
+													  	<i class="bi bi-check-circle text-success me-2 fs-5"></i> 
+													  	Evitar incluir razones personales del abandono.
+													  </li>
+													  <li class="d-flex align-items-center mb-1">
+													  	<i class="bi bi-check-circle text-success me-2 fs-5"></i> 
+													  	Codificar en categorías (Ninguno / 1 / Más de 1).
+													  </li>
+
+													</ul>
+												</td>
+											</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+
+
+					<!-- elemento 10 -->
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="encabezado-10">
+							<button class="accordion-button" type="button"
+							 data-bs-toggle="collapse"
+							 data-bs-target="#elemento10"
+							 aria-expanded="true"
+							 aria-controles="elemento10"
+
+							>
+								Calificaciones
+							</button>
+						</h2>
+						<div id="elemento10" class="accordion-collapse collapse" 
+						aria-labelledby="encabezado-10"
+						data-bs-parent="#temario"
+
+						>
+							<div class="accordion-body">
+								<table class="table table-striped table-hover table-sm  table-bordered">
+									<thead>
+										<tr class="table-dark">
+											<th class="text-center">Descripción del dato</th>
+											<th class="text-center">Tipo de dato</th>
+											<th class="text-center">Privacidad</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td class="text-center">
+												Dato de proceso <br>
+												Es relevante <br>
+												Es asequible
+											</td>
+											<td class="text-center">
+												Se trata un conjunto de pares (clave/valor). <br>
+												En el que la clave es texto nominal y el valor es númerica continua
+											</td>
+											<td class="text-center">
+												Compromete completamente la privacidad
+											</td>
+										</tr>
+										<tr class="table-dark">
+												<th colspan="3" class="text-center">Utilidad para el analisis</th>
+											</tr>
+											<tr>
+												<td colspan="3" class="text-center">
+													<ul class="list-unstyled d-inline-block text-start">
+													  <li class="d-flex align-items-center mb-1">
+													  	<i class=""></i> 
+													  	Variable clave para:
+													  </li>
+													  <li class="d-flex align-items-center mb-1">
+													  	<i class="bi bi-check-circle text-success me-2 fs-5"></i> 
+													  	Evaluar rendimiento
+													  </li>
+													  <li class="d-flex align-items-center mb-1">
+													  	<i class="bi bi-check-circle text-success me-2 fs-5"></i> 
+													  	Predicciones de éxito
+													  </li>
+													  <li class="d-flex align-items-center mb-1">
+													  	<i class="bi bi-check-circle text-success me-2 fs-5"></i> 
+													  	Relacionar desempeño con otras variables (participación, contexto)
+													  </li>
+													  <li class="d-flex align-items-center mb-1">
+													  	<i class="bi bi-check-circle text-success me-2 fs-5"></i> 
+													  	Estudiar correlaciones entre perfiles académicos y empleabilidad
+													  </li>
+													</ul>
+												</td>
+											</tr>
+											<tr class="table-dark">
+												<th colspan="3" class="text-center">Soluciones para la privacidad</th>
+											</tr>
+											<tr>
+												<td colspan="3" class="text-center">
+													<ul class="list-unstyled d-inline-block text-start">
+													  <li class="d-flex align-items-center mb-1">
+													  	<i class="bi bi-check-circle text-success me-2 fs-5"></i> 
+													  	Sustituir calificación exacta por rangos
+													  </li>
+													   <li class="d-flex align-items-center mb-1">
+													  	<i class="bi bi-check-circle text-success me-2 fs-5"></i> 
+													  	Despersonalizar totalmente usando IDs anónimos.
+													  </li>
+													  <li class="d-flex align-items-center mb-1">
+													  	<i class="bi bi-check-circle text-success me-2 fs-5"></i> 
+													  	Evitar mostrar calificaciones individuales en gráficos si hay pocos alumnos
+													  </li>
+
+													</ul>
+												</td>
+											</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+
+
+					<!-- elemento 11 -->
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="encabezado-11">
+							<button class="accordion-button" type="button"
+							 data-bs-toggle="collapse"
+							 data-bs-target="#elemento11"
+							 aria-expanded="true"
+							 aria-controles="elemento11"
+
+							>
+								Renta familia alumno
+							</button>
+						</h2>
+						<div id="elemento11" class="accordion-collapse collapse" 
+						aria-labelledby="encabezado-11"
+						data-bs-parent="#temario"
+
+						>
+							<div class="accordion-body">
+								<table class="table table-striped table-hover table-sm  table-bordered">
+									<thead>
+										<tr class="table-dark">
+											<th class="text-center">Descripción del dato</th>
+											<th class="text-center">Tipo de dato</th>
+											<th class="text-center">Privacidad</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td class="text-center">
+												Datos de contexto <br>
+												Podría ser relevante <br>
+												No es asequible
+											</td>
+											<td class="text-center">
+												Tipo númerico continuo
+											</td>
+											<td class="text-center">
+												Compromete completamente la privacidad
+											</td>
+										</tr>
+										<tr class="table-dark">
+												<th colspan="3" class="text-center">Utilidad para el analisis</th>
+											</tr>
+											<tr>
+												<td colspan="3" class="text-center">
+													<ul class="list-unstyled d-inline-block text-start">
+													  <li class="d-flex align-items-center mb-1">
+													  	<i class=""></i> 
+													  	Permite evaluar:
+													  </li>
+													  <li class="d-flex align-items-center mb-1">
+													  	<i class="bi bi-check-circle text-success me-2 fs-5"></i> 
+													  	Influencia del nivel socioeconómico en el rendimiento
+													  </li>
+													  <li class="d-flex align-items-center mb-1">
+													  	<i class="bi bi-check-circle text-success me-2 fs-5"></i> 
+													  	Necesidad de becas o apoyos
+													  </li>
+													  <li class="d-flex align-items-center mb-1">
+													  	<i class="bi bi-check-circle text-success me-2 fs-5"></i> 
+													  	Desigualdades de acceso a recursos
+													  </li>
+													  <li class="d-flex align-items-center mb-1">
+													  	<i class=""></i> 
+													  	Es una variable delicada, pero relevante para estudios de equidad.
+													  </li>
+													</ul>
+												</td>
+											</tr>
+											<tr class="table-dark">
+												<th colspan="3" class="text-center">Soluciones para la privacidad</th>
+											</tr>
+											<tr>
+												<td colspan="3" class="text-center">
+													<ul class="list-unstyled d-inline-block text-start">
+													  <li class="d-flex align-items-center mb-1">
+													  	<i class="bi bi-check-circle text-success me-2 fs-5"></i> 
+													  	No usar el valor exacto, sino rangos
+													  </li>
+													   <li class="d-flex align-items-center mb-1">
+													  	<i class="bi bi-check-circle text-success me-2 fs-5"></i> 
+													  	Si se usa porcentaje o intervalos oficiales (becas), mejor
+													  </li>
+													  <li class="d-flex align-items-center mb-1">
+													  	<i class="bi bi-check-circle text-success me-2 fs-5"></i> 
+													  	Evitar mezclar esta variable con otras sensibles si hay pocos estudiantes.
+													  </li>
+
+													</ul>
+												</td>
+											</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+
+
+					<!-- elemento 12 -->
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="encabezado-12">
+							<button class="accordion-button" type="button"
+							 data-bs-toggle="collapse"
+							 data-bs-target="#elemento12"
+							 aria-expanded="true"
+							 aria-controles="elemento12"
+
+							>
+								Acceso a recursos digitales
+							</button>
+						</h2>
+						<div id="elemento12" class="accordion-collapse collapse" 
+						aria-labelledby="encabezado-12"
+						data-bs-parent="#temario"
+
+						>
+							<div class="accordion-body">
+								<table class="table table-striped table-hover table-sm  table-bordered">
+									<thead>
+										<tr class="table-dark">
+											<th class="text-center">Descripción del dato</th>
+											<th class="text-center">Tipo de dato</th>
+											<th class="text-center">Privacidad</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td class="text-center">
+												Datos de contexto <br>
+												Podría ser relevantees <br>
+												Es asequible
+											</td>
+											<td class="text-center">
+												Tipo categórico nominal <br>
+												Texto
+											</td>
+											<td class="text-center">
+												Compromete completamente la privacidad
+											</td>
+										</tr>
+										<tr class="table-dark">
+												<th colspan="3" class="text-center">Utilidad para el analisis</th>
+											</tr>
+											<tr>
+												<td colspan="3" class="text-center">
+													<ul class="list-unstyled d-inline-block text-start">
+													  <li class="d-flex align-items-center mb-1">
+													  	<i class=""></i> 
+													  	Fundamental para:
+													  </li>
+													  <li class="d-flex align-items-center mb-1">
+													  	<i class="bi bi-check-circle text-success me-2 fs-5"></i> 
+													  	Detectar brecha digital
+													  </li>
+													  <li class="d-flex align-items-center mb-1">
+													  	<i class="bi bi-check-circle text-success me-2 fs-5"></i> 
+													  	Relacionar recursos con aprendizaje en FP
+													  </li>
+													  <li class="d-flex align-items-center mb-1">
+													  	<i class="bi bi-check-circle text-success me-2 fs-5"></i> 
+													  	Valorar accesibilidad de plataformas educativas
+													  </li>
+													  <li class="d-flex align-items-center mb-1">
+													  	<i class="bi bi-check-circle text-success me-2 fs-5"></i> 
+													  	Mejorar estrategias metodológicas
+													  </li>
+													</ul>
+												</td>
+											</tr>
+											<tr class="table-dark">
+												<th colspan="3" class="text-center">Soluciones para la privacidad</th>
+											</tr>
+											<tr>
+												<td colspan="3" class="text-center">
+													<ul class="list-unstyled d-inline-block text-start">
+													  <li class="d-flex align-items-center mb-1">
+													  	<i class="bi bi-check-circle text-success me-2 fs-5"></i> 
+													  	Registrar solo si tiene acceso adecuado (Sí/No/Limitado).
+													  </li>
+													   <li class="d-flex align-items-center mb-1">
+													  	<i class="bi bi-check-circle text-success me-2 fs-5"></i> 
+													  	No guardar direcciones IP, dispositivos concretos, historial de navegación.
+													  </li>
+													  <li class="d-flex align-items-center mb-1">
+													  	<i class="bi bi-check-circle text-success me-2 fs-5"></i> 
+													  	Mantener el dato anonimizado desde el origen.
+													  </li>
+
+													</ul>
+												</td>
+											</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+
+
+					<!-- elemento 13 -->
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="encabezado-13">
+							<button class="accordion-button" type="button"
+							 data-bs-toggle="collapse"
+							 data-bs-target="#elemento13"
+							 aria-expanded="true"
+							 aria-controles="elemento13"
+
+							>
+								Grado de empleabilidad al finalizar el ciclo
+							</button>
+						</h2>
+						<div id="elemento13" class="accordion-collapse collapse" 
+						aria-labelledby="encabezado-13"
+						data-bs-parent="#temario"
+
+						>
+							<div class="accordion-body">
+								<table class="table table-striped table-hover table-sm  table-bordered">
+									<thead>
+										<tr class="table-dark">
+											<th class="text-center">Descripción del dato</th>
+											<th class="text-center">Tipo de dato</th>
+											<th class="text-center">Privacidad</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td class="text-center">
+												Dato de resultado <br>
+												Es relevante <br>
+												Es asequible
+											</td>
+											<td class="text-center">
+												Se trata de un texto, que necesitaria un preprocesado costoso para obtener datos compuetables
+											</td>
+											<td class="text-center">
+												Podría comprometer la privacidad
+											</td>
+										</tr>
+										<tr class="table-dark">
+												<th colspan="3" class="text-center">Utilidad para el analisis</th>
+											</tr>
+											<tr>
+												<td colspan="3" class="text-center">
+													<ul class="list-unstyled d-inline-block text-start">
+													  <li class="d-flex align-items-center mb-1">
+													  	<i class=""></i> 
+													  	Indicador clave para:
+													  </li>
+													  <li class="d-flex align-items-center mb-1">
+													  	<i class="bi bi-check-circle text-success me-2 fs-5"></i> 
+													  	Evaluar la efectividad del programa de FP
+													  </li>
+													  <li class="d-flex align-items-center mb-1">
+													  	<i class="bi bi-check-circle text-success me-2 fs-5"></i> 
+													  	Relacionar éxito laboral con calificaciones, módulos, perfil previo
+													  </li>
+													  <li class="d-flex align-items-center mb-1">
+													  	<i class="bi bi-check-circle text-success me-2 fs-5"></i> 
+													  	Realizar estudios institucionales de calidad educativa
+													  </li>
+													</ul>
+												</td>
+											</tr>
+											<tr class="table-dark">
+												<th colspan="3" class="text-center">Soluciones para la privacidad</th>
+											</tr>
+											<tr>
+												<td colspan="3" class="text-center">
+													<ul class="list-unstyled d-inline-block text-start">
+													  <li class="d-flex align-items-center mb-1">
+													  	<i class="bi bi-check-circle text-success me-2 fs-5"></i> 
+													  	Codificar como categorías generales
+													  </li>
+													   <li class="d-flex align-items-center mb-1">
+													  	<i class="bi bi-check-circle text-success me-2 fs-5"></i> 
+													  	No almacenar empresa, ubicación ni salario.
+													  </li>
+													  <li class="d-flex align-items-center mb-1">
+													  	<i class="bi bi-check-circle text-success me-2 fs-5"></i> 
+													  	No registrar fechas exactas
+													  </li>
+
+													</ul>
+												</td>
+											</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				
+					<h1 class="mt-5 text-center mb-5">Ejemplo de DataSet</h1>
+
+					<table class="table table-bordered table-striped mb-5">
+					    <thead class="table-dark">
+					      <tr>
+					        <th>Nombre y apellidos</th>
+					        <th>Nacionalidad</th>
+					        <th>Sexo</th>
+					        <th>Nº Seguridad Social</th>
+					        <th>Titulación anterior</th>
+					        <th>Situación laboral</th>
+					        <th>Actividades realizadas</th>
+					        <th>Módulos pendientes</th>
+					        <th>Módulos abandonados</th>
+					        <th>Calificaciones</th>
+					        <th>Renta familiar</th>
+					        <th>Acceso a recursos digitales</th>
+					        <th>Grado de empleabilidad</th>
+					      </tr>
+					    </thead>
+					    <tbody>
+					      <tr>
+					        <td>Ana Rodríguez López</td>
+					        <td>Española</td>
+					        <td>F</td>
+					        <td>28 145678901</td>
+					        <td>Bachillerato</td>
+					        <td>Desempleada</td>
+					        <td>18 de 20</td>
+					        <td>1</td>
+					        <td>0</td>
+					        <td>7.8</td>
+					        <td>18.000 €/año</td>
+					        <td>Acceso completo</td>
+					        <td>Empleado al finalizar</td>
+					      </tr>
+
+					      <tr>
+					        <td>Mohamed El Haddadi</td>
+					        <td>Marruecos</td>
+					        <td>M</td>
+					        <td>28 234567890</td>
+					        <td>ESO</td>
+					        <td>Empleado parcial</td>
+					        <td>15 de 20</td>
+					        <td>2</td>
+					        <td>1</td>
+					        <td>6.2</td>
+					        <td>12.500 €/año</td>
+					        <td>Acceso limitado</td>
+					        <td>En búsqueda activa</td>
+					      </tr>
+
+					      <tr>
+					        <td>Lucía Fernández Soto</td>
+					        <td>Española</td>
+					        <td>F</td>
+					        <td>28 987654321</td>
+					        <td>Grado Medio</td>
+					        <td>Desempleada</td>
+					        <td>20 de 20</td>
+					        <td>0</td>
+					        <td>0</td>
+					        <td>8.9</td>
+					        <td>22.000 €/año</td>
+					        <td>Acceso completo</td>
+					        <td>Empleado al finalizar</td>
+					      </tr>
+
+					      <tr>
+					        <td>Pedro Iglesias Martín</td>
+					        <td>Colombia</td>
+					        <td>M</td>
+					        <td>28 556677889</td>
+					        <td>FP Grado Medio</td>
+					        <td>Empleado</td>
+					        <td>12 de 20</td>
+					        <td>3</td>
+					        <td>1</td>
+					        <td>5.5</td>
+					        <td>9.000 €/año</td>
+					        <td>Sin acceso propio</td>
+					        <td>Estudios posteriores</td>
+					      </tr>
+					    </tbody>
+					  </table>
+
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
